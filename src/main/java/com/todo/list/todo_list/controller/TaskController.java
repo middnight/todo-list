@@ -1,7 +1,7 @@
 package com.todo.list.todo_list.controller;
 
 import com.todo.list.todo_list.model.Task;
-import com.todo.list.todo_list.repository.TaskRepository;
+
 import com.todo.list.todo_list.service.TaskService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.DeleteMapping;
