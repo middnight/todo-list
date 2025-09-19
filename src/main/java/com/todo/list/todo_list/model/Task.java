@@ -7,22 +7,25 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
 
-
 import java.time.LocalDateTime;
 
 @Data
 @Entity
 public class Task {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String title;
 
-    @Column(length = 2000)
-    private String description;
+
+    @Column(length = 1000)
+    private String desc;
+
 
     private boolean done=false;
-    private LocalDateTime createAt= LocalDateTime.now();
+
+    private LocalDateTime createdAt= LocalDateTime.now();
 
 }
